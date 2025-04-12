@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Sebastian's Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Sebastian Brzozowski</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projectsl.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p><a href="#">LinkedIn</a></p>
-        <p><a href="#">GitHub</a></p>
-        <p><a href="#">Download Resume</a></p>
-    </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:Brzozowskisebastian07@gmail.com">Brzozowskisebastian07@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sebastian-brzozowski-848069358" target="_blank" rel="noopener">Sebastian Brzozowski on LinkedIn</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/brzozs" target="_blank" rel="noopener">@brzozs</a></p>
+      <p><a href="Sebastian_Brzozowski_Resume.pdf" class="btn" download>📄 Download Résumé</a></p>
+    </div>
 
-    <footer>
-        © 2025 Your Name
-    </footer>
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+      <div>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="_replyto" placeholder="Your email" required />
+      </div>
+      <div>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>© 2025 Sebastian Brzozowski</footer>
+  <script src="script.js"></script>
 </body>
 </html>
